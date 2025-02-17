@@ -89,7 +89,7 @@ a.logout-btn:hover {
     background-color: darkred;
 }
 #intro{
-    font-family: italic;
+    font-style: italic;
     background-image: url(/MYPROJECT/images/groceries.jpg);
     border-radius: 10px;
     border: 1px solid darkred;
