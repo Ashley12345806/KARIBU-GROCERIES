@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Users - KGL</title>
+    <style>
+        body {
+            display: flex;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .sidebar {
+            width: 250px;
+            background: #f4f4f4;
+            padding: 15px;
+            height: 100vh;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            margin: 5px 0;
+        }
+        .sidebar a:hover {
+            background: #ddd;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .table-container {
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar" style="background-color: orange;">
+        <h3>Menu</h3>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="companies.html">Companies</a>
+        <a href="users.html">Users</a>
+        <a href="products.html">Products</a>
+        <a href="payments.html">Payments</a>
+        <a href="sales.html">Sales</a>
+        <a href="logout.html" style="color: red;">Logout</a>
+    </div>
+    
+    <div class="main-content">
+        <h2>Users</h2>
+        <div class="table-container"style="background-color:bisque;">
+            <h3>Registered Users</h3>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Phone</th>
+                    <th>branches</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Michael Okello</td>
+                    <td>Manager</td>
+                    <td>+256 702 123456</td>
+                    <td>Maganjo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Susan Adongo</td>
+                    <td>Manager</td>
+                    <td>+256 776553567</td>
+                    <td>Matugga</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Kaal Mark</td>
+                    <td>Attendant</td>
+                    <td>+256 776554381</td>
+                    <td>Matugga</td>
+                </tr><tr>
+                    <td>2</td>
+                    <td>Museveni Apio</td>
+                    <td>Attendant</td>
+                    <td>+256 706754337</td>
+                    <td>Maganjo</td>
+                </tr><tr>
+                    <td>2</td>
+                    <td>Manzi Dan</td>
+                    <td>Attendant</td>
+                    <td>+256 7876645322</td>
+                    <td>Matugga</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
