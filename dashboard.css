@@ -90,7 +90,7 @@ a.logout-btn:hover {
 }
 #intro{
     font-style: italic;
-    background-image: url(/MYPROJECT/images/groceries.jpg);
+    background-image: url('./images/groceries.jpg');
     border-radius: 10px;
     border: 1px solid darkred;
     padding-top: 20px;
