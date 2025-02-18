@@ -4,7 +4,7 @@ body {
     margin: 0;
     display: flex;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: bisque;
 }
 
 .sidebar {
@@ -90,7 +90,7 @@ a.logout-btn:hover {
 }
 #intro{
     font-style: italic;
-    background-image: url('./images/groceries.jpg');
+    background-image: url('groceries.jpg');
     border-radius: 10px;
     border: 1px solid darkred;
     padding-top: 20px;
