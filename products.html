@@ -6,34 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Karibu Groceries</title>
+    <style>
+        body {
+            background-color: bisque;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand img {
+            max-width: 120px;
+        }
+
+        .navbar .nav-link {
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-link:hover {
+            color: #ffc107;
+        }
+
+        h1 {
+            background-color: #db9107;
+            color: white;
+            padding: 15px;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .card {
+            margin: 15px;
+            border: none;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            background-color: #fff3e0;
+        }
+
+        .card-title a {
+            text-decoration: none;
+            color: #e65100;
+            transition: color 0.3s ease;
+        }
+
+        .card-title a:hover {
+            color: #bf360c;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+            padding: 15px;
+        }
+    </style>
 </head>
 
-<body style="background-color: beige">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="" width="100px" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <a class="navbar-brand" href="kgl.jpg"><img src="kgl.jpg" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Dashboard.html">DASHBOARD</a>
+                        <a class="nav-link active" aria-current="page" href="Dashboard.html">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">LOGIN</a>
+                        <a class="nav-link" href="index.html">Login</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            INFO
-                        </a>
+                            aria-expanded="false">Info</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="sales.html">SALES</a></li>
-                            <li><a class="dropdown-item" href="payments.html">PAYMENTS</a></li>
-                            <li><a class="dropdown-item" href="logout.html">LOG OUT</a></li>
+                            <li><a class="dropdown-item" href="sales.html">Sales</a></li>
+                            <li><a class="dropdown-item" href="payments.html">Payments</a></li>
+                            <li><a class="dropdown-item" href="logout.html">Log Out</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -44,66 +111,77 @@
             </div>
         </div>
     </nav>
-    <h1 style="padding-left:500px;font-style: italic;background-color: rgb(219, 145, 7);"> OUR PRODUCTS</h1>
-    <div class="card-group">
-        <div class="card">
-            <img src="beans.jpg" class="card-img-top" alt="beans"style="height: 420px;">
-            <div class="card-body">
-                <h5 class="card-title"><a href="productdetails.html">RED BEANS</a></h5>
-                <p class="card-text">CATEGORY1</p>
+
+    <h1>OUR PRODUCTS</h1>
+
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="beans.jpg" class="card-img-top" alt="Red Beans">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="beanspage.html">Red Beans</a></h5>
+                        <p class="card-text">Category 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="cowpeas.jpg" class="card-img-top" alt="Cowpeas">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="cowpeas.html">Cowpeas</a></h5>
+                        <p class="card-text">Category 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="black.jpg" class="card-img-top" alt="Beans">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="blackbeanspage.html">Beans</a></h5>
+                        <p class="card-text">Category 1</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <img src="cowpeas.jpg" class="card-img-top" alt="cowpeas">
-            <div class="card-body">
-                <h5 class="card-title"><a href="productdetails.html">COWPEAS</a></h5>
-                <p class="card-text">CATEGORY 1</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="gnuts.jpg" class="card-img-top" alt="Groundnuts">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="productdetails.html">Groundnuts</a></h5>
+                        <p class="card-text">Category 1</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="black.jpg" class="card-img-top" alt="black" style="height: 420px;">
-            <div class="card-body">
-                <h5 class="card-title"><a href="productdetails.html">BEANS</a></h5>
-                <p class="card-text">CATEGORY 1</p>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="soybeans.jpg" class="card-img-top" alt="Soybeans">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="productdetails.html">Soybeans</a></h5>
+                        <p class="card-text">Category 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="maize.jpg" class="card-img-top" alt="Grain">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="productdetails.html">Grain</a></h5>
+                        <p class="card-text">Category 2</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="card-group">
-        <div class="card">
-            <img src="gnuts.jpg" class="card-img-top" alt="">
-            <div class="card-body">
-                <h5 class="card-title"><a href="productdetails.html">GNUTS</a></h5>
-                <p class="card-text">CATEGORY 1</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="soybeans.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title"><a href="productdetails.html">SOY BEANS</a></h5>
-                <p class="card-text">CATEGORY 1</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="maize.jpg" class="card-img-top" alt="..." style="height: 420px;">
-            <div class="card-body">
-                <h5 class="card-title"><a href="productdetails.html">GRAIN</a></h5>
-                <p class="card-text">CATEGORY 2</p>
-            </div>
-        </div>
-    </div>
-    <footer class="text-center py-4" style="background-color: black; color: bisque;">
-        <p>&copy;2025 KARIBU GROCERIES LTD. All rights reserved.</p>
+
+    <footer class="text-center">
+        <p>&copy; 2025 KARIBU GROCERIES LTD. All rights reserved.</p>
     </footer>
-
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>

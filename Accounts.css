@@ -1,5 +1,6 @@
 #intro{
-    background-image:url(groceries.jpg);
+    background-image: url("groceries.jpg");
+
     padding-bottom: 50px;
     width: 65%;
     height: 520px;
